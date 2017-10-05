@@ -3,7 +3,7 @@ class FreelanceProposalsController < ApplicationController
 
   # GET /freelance_proposals
   def index
-    @freelance_proposals = FreelanceProposal.all
+    @freelance_proposals = FreelanceProposal.by_client
 
     render json: @freelance_proposals
   end
